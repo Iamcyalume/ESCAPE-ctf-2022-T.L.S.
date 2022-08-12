@@ -232,7 +232,6 @@ void NTAPI __cdecl_ThreadLocalStorageCallback(PVOID instance, DWORD dwReason, PV
                 s[52] = (f[0] ^ f[17] ^ f[13] + f[10] ^ f[18] + f[20] + f[21] * f[0]) ^ 4809;
                 s[53] = (f[3] + f[15] * f[16] - f[5] * f[23] ^ f[28] - f[1] + f[18] + f[6] ^ f[22] + f[7]) ^ 8052;
 
-                //012 345 678 91011 121314 151617 181920 212223 242526 272829 303132 333435 363738 394041
                 txt[0] = s[rand() % 3];
                 txt[2] = s[(rand() % 3) + 6];
                 txt[3] = s[(rand() % 3) + 9];
